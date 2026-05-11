@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,791;1,791&family=Potta+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Jost:ital@0;1&family=Potta+One&display=swap" rel="stylesheet">
+    <title>GORILBLIN</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <a href="GORILBLIN.html"><p>ГЛАВНАЯ</p></a>
+            <a href="menu.html"><p>МЕНЮ</p></a>
+            <button id="scrollButton_header" class="scroll_style">БРОНЬ</button>
+            <button id="scrollButton_delive" class = "scroll_style">ДОСТАВКА</button>
+            <button id="scrollButton_contact" class="scroll_style">КОНТАКТЫ</button>
+                <div class="header_image_but">
+                    <img src="image/Home/Group.svg" alt="">
+                    <button class="but-1" onclick="document.location='registration.html'">
+                        Sigin Up
+                    </button>
+                </div>
+        </div>
+        <div class="main">
+            <div class="main_logo">
+                <div class="main_logo_name">
+                    <img src="image/GORIL BLIN.png" alt="">
+                </div>
+                <div class="main_logo_image">
+                    <img src="image/png-transparent-pizza-drawing-pizza-italian-cuisine-food-mural-ingredient-line-art-black-and-white-Photoroom 1.png" alt="">
+                </div>
+                <div class="main_menu_but">
+                    <p>Маленькая Италия в Вашем городе</p>
+                    <button class="main_menu_button" onclick="document.location='menu.html'">
+                        Посмотреть меню
+                    </button>
+                </div>
+            </div>
+            <div class="main_img">
+                <img src="image/Home/pasta_new.png" alt="">
+            </div>
+        </div>
+        <div class="info">
+            <p>GorilBlin</p>
+            <p>Серия итальянских ресторанов связанных любовью!</p>
+        </div>
+        <div class="favorite_bolognese">
+            <div class="favorite_bolognese_img">
+                <img src="image/Favorite/Bolognese/Union.png" alt="">
+            </div>
+            <div class="favorite_bolognese_txt">
+                <div class="favorite_bolognese_txt_name">
+                    <p>
+                        Паста Болоньезе:<br>
+                        классический итальянский ужин
+                    </p>
+                </div>
+                <div class="favorite_bolognese_txt_info">
+                    <p class="info_bolognese">
+                        Паста Болоньезе – это классика<br>
+                        итальянской кухни: нежные<br>
+                        спагетти, покрытые насыщенным<br>
+                        мясным соусом из говядины,<br>
+                        томатов и ароматных трав.<br>
+                        Завершает блюдо тертый<br>
+                        пармезан и свежая зелень,<br>
+                        создавая гармонию вкуса и<br>
+                        аромата. Простое, но<br>
+                        изысканное удовольствие!
+                    </p>
+                </div>
+                <div class="favorite_bolognese_button">
+                    <button class="main_menu_button" onclick="document.location='menu.html'">
+                        Посмотреть меню
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="favorite_margherita">
+            <div class="favorite_margherita_img">
+                <img src="image/Favorite/Margherita/Union.png" alt="">
+            </div>
+            <div class="favorite_margherita_txt">
+                <div class="favorite_margherita_txt_name">
+                    <p>
+                        Пицца Маргарита:<br>
+                        вечная классика, которая нравится всем
+                    </p>
+                </div>
+                <div class="favorite_margherita_txt_info">
+                    <p class="info_margherita">
+                        Пицца Маргарита – это простота<br>
+                        и изысканность итальянской<br>
+                        классики. Тонкое тесто,<br>
+                        покрытое сочными томатами,<br>
+                        нежной моцареллой и свежим<br>
+                        базиликом, создает<br>
+                        гармоничное сочетание вкусов.<br>
+                        Каждая деталь подчеркивает<br>
+                        идею совершенства в простоте.
+                    </p>
+                </div>
+                <div class="favorite_margherita_button">
+                    <button class="main_menu_button" onclick="document.location='menu.html'">
+                        Посмотреть меню
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="reserveTable" id="targetSection_header">
+            <div class="reserveTable_white">
+                <div class="reserveTable_white_head" >
+                    <p>
+                        <b>Забронировать стол</b>
+                    </p>
+                </div>
+                <div class="reserveTable_white_info">
+                    <p>
+                        Выберите данные и мы постараемся найти<br>
+                        лучшее место для вас
+                    </p>
+                </div>
+                <div class="reserveTable_white_form">
+                    <form action="ERROR.html" method="get">
+                        <label for="person-select">Количество гостей</label>
+                        <select name="person" id="person-select">
+                            <option value="">--Выберите количество гостей--</option>
+                            <option value="two_peson">2 гостя</option>
+                            <option value="three_peson">3 гостя</option>
+                            <option value="four_peson">4 гостя</option>
+                            <option value="five_peson">5 гостей</option>
+                        </select>
+                        <label for="date-select">Количество гостей</label>
+                        <select name="date" id="date-select">
+                            <option value="">--Выберите дату--</option>
+                            <option value="two_date">2/12/2024</option>
+                            <option value="three_date">3/12/2024</option>
+                            <option value="four_date">4/12/2024</option>
+                            <option value="five_date">5/12/2024</option>
+                        </select>
+                        <label for="time-select">Время</label>
+                        <select name="time" id="time-select">
+                            <option value="">--Выберите время--</option>
+                            <option value="two_date">16:00</option>
+                            <option value="three_date">17:00</option>
+                            <option value="four_date">18:00</option>
+                            <option value="five_date">19:00</option>
+                        </select>
+                        <button>
+                            Найти стол
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="orederOnline_red">
+                <div class="orederOnline_red_head">
+                    <p><b>Заказать онлайн</b></p>
+                </div>
+                <div class="orederOnline_red_info_1">
+                    <p>Легко и быстро</p>
+                </div>
+                <div class="orederOnline_red_info_2">
+                    <p>
+                        Закажите любимые блюда в<br>
+                        удобное для вас время и мы<br>
+                        доставим их вам на адресс до<br>
+                        двери
+                    </p>
+                </div>
+                <div class="orederOnline_red_button">
+                    <button onclick="document.location='ERROR.html'">
+                        Заказать сейчас
+                    </button>
+                </div>
+
+            </div>
+        </div>
+        <div class="ContactUs">
+            <div class="Contact_info" id="targetSection_contact">
+                <div class="Contact_info_address">
+                    <p><b>Контактные данные</b></p>
+                    <p id="contact_info_address_praha">Spolupráce 1342, 140 00 Praha 4-Nusle, Чехия</p>
+                </div>
+                <div class="Contact_info_main">
+                    <div class="Contact_info_schedule">
+                        <p>Пн - Пт:</p>
+                        <p>12:00 - 22:00</p>
+                        <p>Суббота:</p>
+                        <p> 11:00 - 22:00</p>
+                        <p>Воскресенье:</p>
+                        <p> 11:00 -  23:00</p>
+                    </div>
+                    <div class="Contact_info_mail">
+                        <p>info@mysite.com</p>
+                        <p>123-456-7890</p>
+                    </div>
+                </div>
+                <div class="Contact_info_form">
+                    <div class="Contact_info_form_name">
+                        <div class="Contact_info_form_firstname">
+                            <labele for = "name_contact">Имя</labele>
+                            <input type="text" id="name_contact" name="name_contact">
+                        </div>
+                        <div class="Contact_info_form_lastname">
+                            <lable  for = "lastname_contact">Фамилия</lable>
+                            <input type="text" id="lastname_contact" name="lastname_contact">
+                        </div>
+                    </div>
+                    <div class="Contact_info_form_mail_message">
+                        <div class="Contact_info_form_mail">
+                            <labele for = "mail_contact">Email</labele>
+                            <input type="text" id="mail_contact" name="mail_contact">
+                        </div>
+                        <div class="Contact_info_form_message">
+                            <lable for = "message_contact">Сообщение</lable>
+                            <textarea type="text" id="message_contact" name="message_contact"></textarea>
+                        </div>
+                    </div>
+                    <div class="Contact_info_form_button">
+                        <button onclick="document.location='ERROR.html'">
+                            Отправить
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="Contact_map">
+                <div style="position:relative;overflow:hidden;">
+                    <a href="https://yandex.kz/maps/ru/10511/prague/?utm_medium=mapframe&utm_source=maps"
+                       style="color:#eee;font-size:12px;position:absolute;top:0px;">Прага</a>
+                    <a href="https://yandex.kz/maps/ru/10511/prague/house/ZU0YcwdhT0UFQFtqfXxycnhjZQ==/?ll=14.502828%2C50.033429&utm_medium=mapframe&utm_source=maps&z=17.18"
+                       style="color:#eee;font-size:12px;position:absolute;top:14px;">Ледвинова, 1707/1 — Яндекс Карты</a>
+                    <iframe src="https://yandex.kz/map-widget/v1/?ll=14.502828%2C50.033429&mode=whatshere&whatshere%5Bpoint%5D=14.501601%2C50.033429&whatshere%5Bzoom%5D=17&z=17.18" width="455" height="922" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="footer_main">
+                <div class="footer_logo">
+                    <p><b>GORIL<br>BLIN</b></p>
+                </div>
+                <div class="footer_txt_info">
+                    <div class = "footer_txt_info_rest">
+                        <p class="footer_txt">О ресторане</p>
+                        <a href="GORILBLIN.html"><p>Главная</p></a>
+                        <a href="menu.html"><p>Меню</p></a>
+                        <p>Доставка</p>
+                        <p>Другое</p>
+                    </div>
+                    <div class = "footer_txt_info_service">
+                        <p class="footer_txt">Сервис</p>
+                        <p>Центр помощи</p>
+                    </div>
+                    <div class = "footer_txt_info_support">
+                        <p class="footer_txt">Поддержка</p>
+                        <a href=""><p>FAQs</p></a>
+                        <p>Центр поддержки</p>
+                        <p>Контакты</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer_info_social_media">
+                <div class="footer_social_line"></div>
+                <div class="footer_social_icons">
+                    <a href="https://web.whatsapp.com/"><img src="image/Vector.png" alt="WhatsApp"></a>
+                    <a href="https://web.telegram.org/k/"><img src="image/tg.png" alt="Telegram"></a>
+                    <a href="https://x.com/home?lang=ru"><img src="image/x.png" alt="Twitter"></a>
+                    <a href="https://www.facebook.com/"><img src="image/facebook.png" alt="Facebook"></a>
+                </div>
+                <div class="footer_social_line"></div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
+
+<script src="script.js"></script>

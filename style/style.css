@@ -1,0 +1,741 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    overflow-x: hidden;
+}
+
+body{
+    margin: 0;
+    width: 100vw;
+    background-color: rgb(0, 0, 0);
+}
+
+.container{
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    width: 100%;
+}
+
+.header{
+    font-family: "Jost", sans-serif;
+    font-weight: 900;
+    font-size: 1.25rem;
+    font-style: normal;
+    height: 84px;
+    padding: 0 3.75% 0 3.75%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10%;
+}
+
+.scroll_style{
+    font-family: "Jost", sans-serif;
+    font-weight: 900;
+    font-size: 1.25rem;
+    font-style: normal;
+    height: 84px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    outline: none;
+    color: #ffffff;
+    background-color: #000000;
+    cursor: pointer;
+}
+
+.header {
+    background-color: rgb(0, 0, 0);
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+}
+
+.header a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.header_image_but{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 25px;
+    margin-left: auto;
+}
+
+.header_image_but button{
+    border: none;
+    border-radius: 12px;
+    width: 123px;
+    height: 39px;
+    background-color: rgb(133, 16, 16);
+    color: rgb(255, 255, 255);
+    transition: 0.35s;
+    cursor: pointer;
+}
+
+.header_image_but button:hover{
+    background-color: rgb(248, 248, 248);
+    color: rgb(0, 0, 0);
+}
+
+.main{
+    position: relative;
+    display: flex;
+    width: 100%;
+}
+
+.main_logo{
+    padding: 10rem 2% 0 10%;
+    width: 950px;
+}
+
+.main_logo_name{
+    display: flex;
+    justify-content: flex-start;
+}
+.main_logo_image{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 55%;
+}
+
+.main_img{
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 3%;
+    width: 100%;
+}
+
+.main_menu_but{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5rem 2% 0 10%;
+    gap: 30px;
+    font-family: "Jost", sans-serif;
+    font-weight: 900;
+    font-size: 1.25rem;
+    font-style: normal;
+}
+
+.main_menu_button{
+    border: 1px solid #851010;
+    border-radius: 6px;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    width: 200px;
+    height: 50px;
+    cursor: pointer;
+    transition: 0.35s;
+}
+
+.main_menu_button:hover{
+    border: 1px solid #ffff;
+}
+
+.info{
+    font-family: "Potta One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2rem;
+    height: 225px;
+    background-color: rgb(133, 16, 16);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.favorite_bolognese{
+    width: 100%;
+    display: flex;
+}
+
+.favorite_bolognese_img{
+    padding: 4% 0 0 3.125%;
+    display: flex;
+
+}
+
+.favorite_bolognese_txt{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+
+.favorite_bolognese_txt_name{
+    font-family: "Jost", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    flex-direction: column;
+    text-align: right;
+    padding: 5rem 3.125% 0 10%;
+}
+
+.favorite_bolognese_txt_info{
+    font-family: "Jost", sans-serif;
+    font-weight: 100;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.62);
+}
+
+.favorite_bolognese_button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.favorite_margherita{
+    display: flex;
+    width: 100%;
+}
+
+.favorite_margherita_txt{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    order: 1;
+}
+
+.favorite_margherita_txt_name{
+    font-family: "Jost", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: left;
+    padding: 5rem 3.125% 0 10%;
+}
+
+.favorite_margherita_txt_info{
+    font-family: "Jost", sans-serif;
+    font-weight: 100;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.62);
+}
+
+.favorite_margherita_button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.favorite_margherita_img{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 5rem 3.125% 0 0;
+    order: 2;
+
+}
+
+.reserveTable{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.reserveTable_white{
+    height: 832px;
+    width: 640px;
+    margin: 96px 0 96px 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    background-color: #ffffff;
+    color: #851010;
+}
+
+.reserveTable_white_head{
+    font-family: "Jost", sans-serif;
+    font-weight: 400;
+    font-size: 36px;
+}
+
+.reserveTable_white_info{
+    font-family: "Jost", sans-serif;
+    font-weight: 100;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 50px;
+
+}
+
+
+
+.reserveTable_white_form form{
+    display: flex;
+    flex-direction: column;
+    font-family: "Jost", sans-serif;
+    font-weight: 100;
+    font-size: 16px;
+    color: rgba(0, 0, 0);
+}
+
+.reserveTable_white_form select{
+    width: 436px;
+    height: 41px;
+    border-radius: 10px;
+    border: 1px solid #851010;
+    margin-bottom: 50px;
+    cursor: pointer;
+}
+
+.reserveTable_white_form button{
+    border: none;
+    border-radius: 10px;
+    width: 436px;
+    height: 41px;
+    color: white;
+    background-color: #851010;
+    transition: 0.35s;
+    cursor: pointer;
+}
+
+.reserveTable_white_form button:hover{
+    background-color: #ffff;
+    border-radius: 15px;
+    border: 1px solid #851010;
+    color: #851010;
+}
+
+.orederOnline_red{
+
+    height: 832px;
+    width: 640px;
+    margin: 95px 80px 96px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 127px;
+    background-color: #851010;
+}
+
+.orederOnline_red_head{
+    font-family: "Jost", sans-serif;
+    font-weight: 400;
+    font-size: 36px;
+}
+.orederOnline_red_info_1{
+    font-family: "Jost", sans-serif;
+    font-weight: 100;
+    font-size: 18px;
+    display: flex;
+}
+
+.orederOnline_red_info_2{
+    font-family: "Jost", sans-serif;
+    font-weight: 300;
+    font-size: 24px;
+    display: flex;
+}
+
+.orederOnline_red_button button{
+    border-radius: 10px;
+    border: none;
+    width: 320px;
+    height: 41px;
+    background-color: #ffffff;
+    color: #851010;
+    transition: 0.35s;
+    cursor: pointer;
+}
+.orederOnline_red_button button:hover{
+    background-color: #851010;
+    color: #ffffff;
+    border-radius: 15px;
+    border: 1px solid #ffffff;
+}
+
+.ContactUs{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.Contact_info{
+    height: 922px;
+    width: 885px;
+    background-color: #851010;
+}
+
+.Contact_info_address{
+    font-family: "Jost", sans-serif;
+    font-weight: 800;
+    font-size: 36px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+    margin-top: 75px;
+}
+#contact_info_address_praha{
+    font-family: "Jost", sans-serif;
+    font-weight: 100;
+    font-size: 24px;
+}
+
+.Contact_info_main{
+    font-family: "Jost", sans-serif;
+    font-weight: 100;
+    font-size: 24px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    margin-top: 45px;
+}
+
+.Contact_info_form_name{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 95px;
+
+}
+
+.Contact_info_form_name input{
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background-color: transparent;
+    color: #ffffff;
+}
+
+.Contact_info_form_firstname{
+    display: flex;
+    flex-direction: column;
+}
+
+.Contact_info_form_lastname{
+    display: flex;
+    flex-direction: column;
+}
+
+.Contact_info_form_mail_message{
+    margin-top: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Contact_info_form_mail_message input, textarea{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background-color: #851010;
+    width: 390px;
+    color: #ffffff;
+}
+
+.Contact_info_form_mail_message textarea{
+    resize: none;
+    height: 50px;
+}
+
+.Contact_info_form_mail{
+    display: flex;
+    flex-direction: column;
+}
+.Contact_info_form_message{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+
+}
+.Contact_info_form_button{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Contact_info_form_button button{
+    width: 390px;
+    height: 41px;
+    border: none;
+    border-radius: 10px;
+    background-color: #ffffff;
+    color: #851010;
+    cursor: pointer;
+    transition: 0.55s;
+}
+
+.Contact_info_form_button button:hover{
+    background-color: #851010;
+    color: #ffffff;
+    border-radius: 15px;
+    border: 1px solid ;
+}
+
+footer{
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.footer_main{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 150px;
+}
+
+.footer_logo{
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 400;
+    font-size: 64px;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer_txt_info{
+    display: flex;
+    gap: 50px;
+    justify-content: flex-end;
+    margin: 0;
+}
+
+.footer_txt_info_rest{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.footer_txt_info_service{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.footer_txt_info_support{
+    display: flex;
+    flex-direction: column;
+    gap: 27px;
+}
+
+.footer_social {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+    width: 100%;
+}
+
+.footer_social_line {
+    flex: 1;
+    border-top: 1px solid #fff;
+    height: 1px;
+}
+
+.footer_social_icons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    padding: 0 20px;
+}
+
+.footer_social_icons a img {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+}
+
+.footer_info_social_media {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.footer_social_line {
+    flex: 1;
+    border-top: 1px solid #fff;
+    height: 1px;
+}
+
+.footer_social_icons {
+    display: flex;
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.footer_social_icons a img {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    filter: brightness(0) invert(1);
+}
+
+.footer_txt_info_rest{
+    font-family: "Potta One", sans-serif;
+    font-weight: 200;
+    font-size: 15px;
+}
+
+.footer_txt_info_rest a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.footer_txt_info_service{
+    font-family: "Potta One", sans-serif;
+    font-weight: 200;
+    font-size: 15px;
+}
+
+
+.footer_txt_info_support{
+    font-family: "Potta One", sans-serif;
+    font-weight: 200;
+    font-size: 15px;
+}
+
+.footer_txt{
+    font-family: "Potta One", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+
+}
+a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+@media (max-width: 1255px) {
+    .header {
+        gap: 60px;
+        padding: 0 20px;
+    }
+}
+
+@media (max-width: 1430px){
+    .main_logo_image{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding-top: 5%;
+        padding-left: 10%;
+    }
+}
+
+@media (max-width: 1185px){
+    .favorite_bolognese{
+    display: block;
+    }
+
+    .favorite_bolognese_img{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .favorite_margherita{
+        display: block;
+    }
+
+    .favorite_margherita_img{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .reserveTable{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 150px;
+    }
+
+    .reserveTable_white{
+        padding: 0 5% 6% 5%;
+        margin: 0;
+    }
+
+    .orederOnline_red{
+        padding: 6% 5% 6% 5%;
+        margin: 0;
+    }
+
+    .ContactUs{
+        margin-top: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .Contact_map{
+        margin-top: 8%;
+    }
+}
+
+@media (max-width: 800px){
+    .ContactUs{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+    }
+    .Contact_info{
+        height: 922px;
+        width: 40%;
+        background-color: #851010;
+    }
+}
